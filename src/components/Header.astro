@@ -1,0 +1,33 @@
+---
+import Icon from "./Icon/Icon.astro";
+import IconWhatsap from "./Icon/IconWhatsap.astro";
+---
+
+<nav
+  class="flex w-full items-center justify-around py-4 font-bold text-white text-xl border-b-slate-400/10 shadow-md border-b-2"
+>
+  <div>
+    <a class="flex gap-2 items-center" href="/index">
+      <i class="text-green-300 text-xl"><Icon /></i>
+      <span class="text-2xl tracking-widest">AvanzaIA</span>
+    </a>
+  </div>
+  <div class="items-center">
+    <ul class="flex items-center tracking-wider gap-10">
+      <a class="text-slate-50 hover:text-green-200" href="/index.astro">
+        <li>Inicio</li>
+      </a>
+      <a class="text-slate-5 hover:text-green-200" href="/servicio">
+        <li>Servicio</li>
+      </a>
+      <a class="text-slate-50 hover:text-green-200" href="/portafolio">
+        <li>Portafolio</li>
+      </a>
+    </ul>
+  </div>
+
+  <a class="flex items-center gap-2" href="">
+    <i class="text-green-300"><IconWhatsap /></i>
+    <span class="text-xl">Whatsaap</span>
+  </a>
+</nav>
